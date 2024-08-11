@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import bananaTalk from "../../Assets/Projects/bananaTalk.png";
+import promptopia from "../../Assets/Projects/promptopia.png";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
@@ -16,6 +17,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={promptopia}
+              isBlog={false}
+              title="Promptopia"
+              description="The Share-Prompt App is a web application designed for creating, managing, and sharing prompts efficiently. It is built using Next.js, which provides server-side rendering and a seamless user experience. The app is styled with Tailwind CSS, ensuring a modern and responsive design. MongoDB is used as the database for handling data storage, while NextAuth handles authentication, offering secure and customizable login options. The application is hosted on Vercel for fast and reliable deployment, and the codebase is managed with GitHub for version control. This tech stack ensures a performant, secure, and scalable platform for users."
+              ghLink="https://github.com/singhxamit21/share-prompt-app"
+              demoLink="https://share-prompt-app.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={bananaTalk}
