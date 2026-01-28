@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import bananaTalk from "../../Assets/Projects/bananaTalk.png";
 import promptopia from "../../Assets/Projects/promptopia.png";
 import invoice from "../../Assets/Projects/invoice.png";
+import macBook from "../../Assets/Projects/macBook.png";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
 
@@ -18,7 +19,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={macBook}
+              isBlog={false}
+              title="Apple MacBook"
+              description="A stunning recreation of Apple's premium product showcase featuring immersive 3D graphics, scroll-driven animations, and interactive experiences built with modern web technologies."
+              ghLink="https://github.com/singhxamit21/mackbook"
+              demoLink="https://mackbook-seven.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={promptopia}
               isBlog={false}
@@ -49,7 +61,7 @@ function Projects() {
             />
           </Col>
 
-        
+
         </Row>
       </Container>
     </Container>
